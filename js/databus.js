@@ -22,6 +22,7 @@ export default class Databus {
     this.blocks.reset();
     this.tableBlock = this.blocks.tableBlock;
     this.blockShape = this.blocks.blockShape;
+    this.matrixShape = this.blocks.matrixShape;
     this.score = 0;
     this.blocks = [];
     this.frame = 0;

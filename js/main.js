@@ -17,19 +17,14 @@ export default class Main {
 
   reset() {
 
-    console.log(databus)
     databus.reset();
-    console.log(databus.tableBlock)
     canvas.removeEventListener('touchstart', this.touchHandler.bind(this));
 
     this.bg = new Background();
 
     this.blockController = new BlockController();
     this.blockController.reset();
-    console.log(this.blockController.tableBlock)
-    console.log(this.blockController.activeBlock)
     this.blockController.generateActiveBlock();
-    console.log(this.blockController.activeBlock)
 
     this.gameInfo = new GameInfo();
 

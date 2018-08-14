@@ -1,9 +1,12 @@
 import Databus from '../databus.js'
 import Sprite from '../base/sprite.js'
 
-const BLOCK_IMG = 'images/block.jpg'
+const BLOCK_IMG = 'images/block.jpg';
+const screenWidth = window.innerWidth;
+const screenHeight = window.innerHeight;
 
 let databus = new Databus();
+let blockNum = Math.floor(screenWidth / 20);
 
 export default class Block{
   constructor() {
