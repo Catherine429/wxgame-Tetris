@@ -60,8 +60,6 @@ export default class Main {
   render() {
     this.bg.drawToCanvas(context);
 
-    this.gameInfo.renderGameScore(context, databus.score);
-
     this.blockController.render(context);
 
     if (databus.gameover) {
@@ -76,11 +74,11 @@ export default class Main {
   }
 
   update() {
-    if (databus.gameover) 
+    if (databus.gameover || databus.pause) 
       return;
     
 
-    if(databus.frame % 20 === 0)
+    if(databus.frame % 30 === 0)
       this.blockController.update();
 
 

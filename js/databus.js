@@ -24,9 +24,11 @@ export default class Databus {
     this.blockShape = this.blocks.blockShape;
     this.matrixShape = this.blocks.matrixShape;
     this.score = 0;
+    this.clearLine = 0;
     this.blocks = [];
     this.frame = 0;
     this.gameover = false;
+    this.pause = false;
   }
 
 }

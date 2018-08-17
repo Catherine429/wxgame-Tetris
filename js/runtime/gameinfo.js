@@ -11,13 +11,6 @@ export default class GameInfo {
 
   //也可以沒有构造函数，用的是默认的构造函数，java学的都忘哪去了！！！
 
-  renderGameScore(ctx, score) {
-    ctx.fillStyle = '#ffffff';
-    ctx.font = "20px Arial";
-
-    ctx.fillText(score, 10, screenHeight - 30);
-  }
-
   renderGameOver(ctx, score) {
 
     ctx.drawImage(atlas, 0, 0, 119, 108, screenWidth / 2 - 150, screenHeight / 2 - 100, 300, 300);

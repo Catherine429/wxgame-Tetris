@@ -3,7 +3,7 @@
  * @desc 
  */
 const COLUMN = 25,
-      ROW = 17;
+      ROW = 14;
 
 
 export default class Blocks {
@@ -23,10 +23,6 @@ export default class Blocks {
 
 
   }
-
-  /**
-   * 
-   */
 
 /**
  * 比如说点击重新开始，我们就要清空整个数组，变为全0
